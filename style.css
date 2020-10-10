@@ -1,23 +1,95 @@
-/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
 
 body {
     text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin: 3rem;
+}
+.zbozi{
+    display: flex;
+    width: 670px;
+    height: 440px;
+    height: 100%;
+    justify-content: center;
+}
+.vizual{
+    background-image:linear-gradient(#06d7c1, #50cc49);
+    padding: 30px;
+    flex: 1;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+.detaily {
+    padding: 30px;
+    flex: 1;
+    background-color: #f5f5f5;
+    border-radius: 0 10px 10px 0;
+
+}
+.bota{
+    position: absolute; left: -90px; top: 170px;
+    z-index: sticky;
+}
+.popis {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #06d7c1;
+}
+.produkt{
+    color:#959595;
+}
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+}
+.zaruka{
+    font-size: 12px;
+}
+.nazev{
+    font-size: 20px;
+    font-weight: 500;
+}
+.parametr{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.tlacitko{
+    text-decoration: none;
+    background-color:#f15f42;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.velikosti li{
+    display: inline;
+}
+.velikosti{
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 80px;
+}
+.vybrana{
+    color:#f15f42;
+    border: 0.5px solid #f15f42;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.pet, .sest, .sedm, .devet, .ctyrycet{
+    padding: 0.5rem;
+}
+.cenovka{
+    position: relative; top: 250px;
+    text-align: right;
+    padding-bottom: 30px;
+}
+.akce{
+    padding-bottom: 30px;
 }
 
-/*
- BARVY
- svetle sede pozadi      #f5f5f5
- tmavsi seda             #959595
- barevny prechod nahore  #06d7c1
- barevny prechod dole    #50cc49
- zelena cara             #06d7c1
- oranzova                #f15f42
-
- PISMO
- Rubik - pouzite rezy pisma regular 400 a medium 500
- https://fonts.google.com/specimen/Rubik
-*/
-
-/* ----- zde zacni psat vlastni css ----- */
